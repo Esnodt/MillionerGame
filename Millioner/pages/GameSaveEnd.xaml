@@ -1,0 +1,41 @@
+﻿<Page x:Class="Millioner.pages.GameSaveEnd"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Millioner.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="GameSaveEnd">
+
+    <Grid>
+        <Image Source="/back/fon.jpg" Stretch="Fill"/>
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Ура. Забрать деньги" x:Name="otvet1" Click="otvet1_Click" />
+                    <Button Content="Отдать деньги в благотворительность" x:Name="otvet2" Click="otvet2_Click"/>
+                </StackPanel>
+
+
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" VerticalAlignment="Center">
+                <TextBlock Width="600" Height="100" Text="Поздравляем! Вы выиграли 20000р и ответили на все вопросы!"/>
+
+            </StackPanel>
+
+
+        </Grid>
+
+    </Grid>
+</Page>

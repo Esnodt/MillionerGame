@@ -1,0 +1,26 @@
+﻿<Window x:Class="Millioner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Millioner"
+        mc:Ignorable="d" Loaded="Window_Loaded" 
+        Title="MainWindow" Height="1080" Width="1920" WindowStyle="None" WindowState="Maximized">
+    <Grid>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+
+
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+            
+            
+            <Button Width="150" Height="100" Content="Звонок другу" FontSize="20" x:Name="buttonfriend" Click="buttonfriend_Click" Visibility="Collapsed"></Button>
+
+            <Button Width="150" Height="100" Content="50 на 50" FontSize="20" x:Name="buttonOR" Click="buttonOR_Click" Visibility="Collapsed"></Button>
+
+        </StackPanel>
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,55 @@
+﻿<Page x:Class="Millioner.pages.GamePage1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Millioner.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="GamePage1">
+
+    <Grid>
+        <Image Source="/back/fon.jpg" Stretch="Fill"/>
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel HorizontalAlignment="Left">
+                <Button x:Name="ButtonBack" Content="Выход" Width="100" Click="ButtonBack_Click" ></Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="0" HorizontalAlignment="Right">
+                <Label Content="Ваши заработанные деньги: 100 рублей" FontSize="20"/>
+            </StackPanel>
+
+
+            <StackPanel Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="1. 11" x:Name="otvet1" Click="otvet1_Click" />
+                    <Button Content="2. 22" x:Name="otvet2" Click="otvet2_Click"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="3. 777" x:Name="otvet3" Click="otvet3_Click" />
+                    <Button Content="4. 77" x:Name="otvet4" Click="otvet4_Click" />
+                </StackPanel>
+
+
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" VerticalAlignment="Center">
+                <TextBlock Width="600" Height="100" Text="Бочонок с каким числом в русском лото принято называть «топориками»?"/>
+                
+            </StackPanel>
+
+
+        </Grid>
+
+    </Grid>
+</Page>
